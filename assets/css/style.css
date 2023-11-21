@@ -1,26 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     font-family: sans-serif;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: #ff6900;
     height: 8vh;
-    z-index: 2; 
-    /* rivedi lo z index */
-} 
+    z-index: 3;
+}
 
-header figure{
+header figure {
     height: 100%;
     padding: 20px;
 }
@@ -30,7 +29,7 @@ figure img {
 }
 
 
-nav{
+nav {
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -45,9 +44,14 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 15px;
+    flex-basis: 25%;
 }
 
-main{
+nav ul:nth-of-type(2){
+    justify-content: flex-end;
+}
+
+main {
     position: relative;
     top: 8vh;
     width: 60%;
@@ -55,20 +59,21 @@ main{
     margin: 0 auto;
 }
 
-.shop-container{
+.shop-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-block: 50px;
     row-gap: 40px;
 }
+
 /*------------------- codice carte -----------------*/
-.card-container{
+.card-container {
     height: 500px;
     width: calc(100% / 3 -40px);
 }
 
-.card-container figure{
+.card-container figure {
     height: 90%;
     position: relative;
 }
@@ -77,13 +82,13 @@ main{
     background-color: red;
     color: white;
     font-weight: bold;
-    padding:3px;
+    padding: 3px;
     position: absolute;
     left: 0;
     bottom: 30px;
 }
 
-.sost{
+.sost {
     background-color: green;
     color: white;
     font-weight: bold;
@@ -118,21 +123,21 @@ figure img {
     width: 100%;
 }
 
-#noshow{
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   opacity: 0;
+#noshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
 }
 
-#noshow:hover{
+#noshow:hover {
     opacity: 1;
 }
 
 
-figure button{
+figure button {
     background-color: white;
     position: absolute;
     padding: 10px;
@@ -142,7 +147,7 @@ figure button{
     z-index: 2;
 }
 
-figure button svg:hover{
-fill: red;
-cursor: pointer;
+figure button svg:hover {
+    fill: red;
+    cursor: pointer;
 }
