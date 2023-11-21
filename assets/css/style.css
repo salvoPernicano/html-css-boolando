@@ -31,7 +31,7 @@ figure img {
 
 
 nav{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -50,20 +50,22 @@ nav ul {
 main{
     position: relative;
     top: 8vh;
-    background-color: lightcoral;
-    width: 80%;
+    width: 60%;
     height: 100vh;
     margin: 0 auto;
 }
 
 .shop-container{
-    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-block: 50px;
+    row-gap: 40px;
 }
 /*------------------- codice carte -----------------*/
 .card-container{
-    border: 2px solid blue;
     height: 500px;
-    width: 300px;
+    width: calc(100% / 3 -40px);
 }
 
 .card-container figure{
@@ -93,7 +95,7 @@ main{
 
 .card-container .text-container {
     height: 10%;
-    width: 70%;
+    width: 80%;
 }
 
 .text-container .marca {
@@ -131,6 +133,7 @@ figure img {
 
 
 figure button{
+    background-color: white;
     position: absolute;
     padding: 10px;
     border: none;
