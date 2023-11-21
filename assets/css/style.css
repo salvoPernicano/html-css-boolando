@@ -115,3 +115,31 @@ figure img {
     height: 100%;
     width: 100%;
 }
+
+#noshow{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
+}
+
+#noshow:hover{
+    opacity: 1;
+}
+
+
+figure button{
+    position: absolute;
+    padding: 10px;
+    border: none;
+    top: 10px;
+    right: 0px;
+    z-index: 2;
+}
+
+figure button svg:hover{
+fill: red;
+cursor: pointer;
+}
